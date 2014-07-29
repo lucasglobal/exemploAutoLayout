@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UIView *viewVermelha;
-
+@property (weak, nonatomic) IBOutlet UIView *viewVermelha;
 @property (weak, nonatomic) IBOutlet UIView *viewCinza;
-
+@property (weak, nonatomic) IBOutlet UIView *viewAzul;
+@property (weak, nonatomic) IBOutlet UIView *viewAmarela;
 - (IBAction)botaoAlterar:(id)sender;
 
 @end

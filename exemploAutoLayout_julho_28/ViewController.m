@@ -33,9 +33,12 @@
     else if(self.view.bounds.size.height == 568){
         
     }
-    NSLog(@"tela %f",self.view.bounds.size.height);
-    if(self.viewVermelha.bounds.size.height == 568){
-        self.viewVermelha.bounds = CGRectMake(self.viewVermelha.bounds.origin.x, self.viewVermelha.bounds.origin.y+200, self.viewVermelha.bounds.size.width, self.viewVermelha.bounds.size.height);
-    }
+    NSLog(@"tela %f",self.viewVermelha.bounds.size.height);
+    NSLog(@"entrou");
+    self.viewVermelha.bounds = CGRectMake(self.viewVermelha.bounds.origin.x, self.viewVermelha.bounds.origin.y-400, self.viewVermelha.bounds.size.width, self.viewVermelha.bounds.size.height+200);
+    [self.view setNeedsDisplay];
+    self.viewCinza.bounds = CGRectMake(self.viewCinza.bounds.origin.x, self.viewCinza.bounds.origin.y-200, self.viewCinza.bounds.size.width, self.viewCinza.bounds.size.height+200);
+    [self.view setNeedsDisplay];
+    self.viewAzul.bounds = CGRectMake(self.viewAzul.bounds.origin.x, self.viewAzul.bounds.origin.y-800, self.viewAzul.bounds.size.width, self.viewAzul.bounds.size.height-400);
 }
 @end
