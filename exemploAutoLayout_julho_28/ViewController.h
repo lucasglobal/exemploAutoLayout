@@ -13,6 +13,19 @@
 @property (weak, nonatomic) IBOutlet UIView *viewCinza;
 @property (weak, nonatomic) IBOutlet UIView *viewAzul;
 @property (weak, nonatomic) IBOutlet UIView *viewAmarela;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *ConstraintAzul_Vermelho;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topAzul;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topVermelho;
 - (IBAction)botaoAlterar:(id)sender;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topCinza;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bttVermelho;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bttCinza;
+
+
+
+
+
 
 @end

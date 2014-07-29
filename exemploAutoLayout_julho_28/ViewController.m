@@ -27,18 +27,32 @@
 }
 
 - (IBAction)botaoAlterar:(id)sender {
-    if(self.view.bounds.size.height == 480){
-        
+    //4" portrait aumentando
+    if(self.view.bounds.size.height == 568){
+        if(self.bttCinza.constant == 128){
+            self.bttCinza.constant = 328;
+            self.bttVermelho.constant = 328;
+        }
+        //4"portraint diminuindo
+        else{
+            self.bttCinza.constant = 128;
+            self.bttVermelho.constant = 128;
+        }
     }
-    else if(self.view.bounds.size.height == 568){
-        
+    else if(self.view.bounds.size.height == 320){
+        if(self.bttCinza.constant == 128){
+            self.bttCinza.constant = 200;
+            self.bttVermelho.constant = 200;
+        }
+        else{
+            self.bttCinza.constant = 128;
+            self.bttVermelho.constant = 128;
+        }
     }
-    NSLog(@"tela %f",self.viewVermelha.bounds.size.height);
-    NSLog(@"entrou");
-    self.viewVermelha.bounds = CGRectMake(self.viewVermelha.bounds.origin.x, self.viewVermelha.bounds.origin.y-400, self.viewVermelha.bounds.size.width, self.viewVermelha.bounds.size.height+200);
-    [self.view setNeedsDisplay];
-    self.viewCinza.bounds = CGRectMake(self.viewCinza.bounds.origin.x, self.viewCinza.bounds.origin.y-200, self.viewCinza.bounds.size.width, self.viewCinza.bounds.size.height+200);
-    [self.view setNeedsDisplay];
-    self.viewAzul.bounds = CGRectMake(self.viewAzul.bounds.origin.x, self.viewAzul.bounds.origin.y-800, self.viewAzul.bounds.size.width, self.viewAzul.bounds.size.height-400);
+}
+//resetando layout constraint caso orientação mude
+-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+    self.bttCinza.constant = 128;
+    self.bttVermelho.constant = 128;
 }
 @end

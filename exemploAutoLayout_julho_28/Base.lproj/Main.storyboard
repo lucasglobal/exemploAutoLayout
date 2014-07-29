@@ -25,9 +25,6 @@
                                 <rect key="frame" x="170" y="428" width="130" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80699962990755247" green="0.80994705879050855" blue="0.81687330163043481" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="2f5-SX-9QN"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IH0-xb-T1z">
                                 <rect key="frame" x="74" y="20" width="226" height="33"/>
@@ -54,22 +51,26 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eZf-32-BNO" firstAttribute="top" secondItem="y9g-AS-Zax" secondAttribute="bottom" constant="8" id="0Zi-ne-R8X"/>
                             <constraint firstItem="6u6-7v-q72" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="4yE-P0-6QC"/>
                             <constraint firstItem="IH0-xb-T1z" firstAttribute="leading" secondItem="14W-40-768" secondAttribute="trailing" constant="8" id="5Q5-96-Aqi"/>
                             <constraint firstItem="y9g-AS-Zax" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="6aF-T5-Ib6"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="eZf-32-BNO" secondAttribute="bottom" constant="20" id="9k7-hb-aAf"/>
                             <constraint firstItem="6u6-7v-q72" firstAttribute="width" secondItem="eZf-32-BNO" secondAttribute="width" id="GAO-sp-xgc"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6u6-7v-q72" secondAttribute="bottom" constant="20" id="MCN-F4-nxA"/>
                             <constraint firstItem="eZf-32-BNO" firstAttribute="leading" secondItem="6u6-7v-q72" secondAttribute="trailing" constant="20" id="OIU-iA-qxz"/>
                             <constraint firstAttribute="trailing" secondItem="IH0-xb-T1z" secondAttribute="trailing" constant="20" id="Ody-WZ-QsB"/>
                             <constraint firstItem="6u6-7v-q72" firstAttribute="top" secondItem="y9g-AS-Zax" secondAttribute="bottom" constant="8" id="Px3-zi-Gc6"/>
                             <constraint firstAttribute="trailing" secondItem="eZf-32-BNO" secondAttribute="trailing" constant="20" symbolic="YES" id="QI6-i8-hvn"/>
                             <constraint firstAttribute="trailing" secondItem="y9g-AS-Zax" secondAttribute="trailing" constant="20" id="UM0-rt-Wii"/>
-                            <constraint firstItem="6u6-7v-q72" firstAttribute="bottom" secondItem="eZf-32-BNO" secondAttribute="bottom" id="i8F-SZ-Mw3"/>
-                            <constraint firstItem="6u6-7v-q72" firstAttribute="top" secondItem="eZf-32-BNO" secondAttribute="top" id="jHm-2m-U6Q"/>
+                            <constraint firstItem="6u6-7v-q72" firstAttribute="bottom" secondItem="y9g-AS-Zax" secondAttribute="bottom" constant="128" id="af1-Cn-duD"/>
+                            <constraint firstItem="eZf-32-BNO" firstAttribute="bottom" secondItem="y9g-AS-Zax" secondAttribute="bottom" constant="128" id="aqa-Cb-fTY"/>
                             <constraint firstItem="y9g-AS-Zax" firstAttribute="top" secondItem="14W-40-768" secondAttribute="bottom" constant="8" id="y0c-r0-cIl"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ConstraintAzul_Vermelho" destination="Px3-zi-Gc6" id="6EI-tn-DR5"/>
+                        <outlet property="bttCinza" destination="aqa-Cb-fTY" id="KDC-hW-yaJ"/>
+                        <outlet property="bttVermelho" destination="af1-Cn-duD" id="XN0-34-sXG"/>
                         <outlet property="viewAzul" destination="y9g-AS-Zax" id="qrr-f9-giP"/>
                         <outlet property="viewCinza" destination="eZf-32-BNO" id="sym-sJ-ejx"/>
                         <outlet property="viewVermelha" destination="6u6-7v-q72" id="FN6-bm-Y0C"/>
