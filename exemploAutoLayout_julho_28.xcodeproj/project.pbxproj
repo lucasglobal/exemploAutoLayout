@@ -138,6 +138,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E405B8AD198824DA00B86897 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E4AC19791986C85A0087DB98 /* ViewController.h */,
+				E4AC197A1986C85A0087DB98 /* ViewController.m */,
+			);
+			name = viewControllers;
+			sourceTree = "<group>";
+		};
+		E405B8AE1988250000B86897 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E4AC19761986C85A0087DB98 /* Main.storyboard */,
+				E4AC197C1986C85A0087DB98 /* Images.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		E4AC19581986C85A0087DB98 = {
 			isa = PBXGroup;
 			children = (
@@ -177,10 +195,8 @@
 			children = (
 				E4AC19731986C85A0087DB98 /* AppDelegate.h */,
 				E4AC19741986C85A0087DB98 /* AppDelegate.m */,
-				E4AC19761986C85A0087DB98 /* Main.storyboard */,
-				E4AC19791986C85A0087DB98 /* ViewController.h */,
-				E4AC197A1986C85A0087DB98 /* ViewController.m */,
-				E4AC197C1986C85A0087DB98 /* Images.xcassets */,
+				E405B8AE1988250000B86897 /* Images */,
+				E405B8AD198824DA00B86897 /* viewControllers */,
 				E4AC196B1986C85A0087DB98 /* Supporting Files */,
 			);
 			path = exemploAutoLayout_julho_28;
@@ -740,6 +756,7 @@
 				E4AC19951986C85A0087DB98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4AC19961986C85A0087DB98 /* Build configuration list for PBXNativeTarget "exemploAutoLayout_julho_28Tests" */ = {
 			isa = XCConfigurationList;
@@ -748,6 +765,7 @@
 				E4AC19981986C85A0087DB98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4AC19CE198812E20087DB98 /* Build configuration list for PBXNativeTarget "projetoGit" */ = {
 			isa = XCConfigurationList;
@@ -756,6 +774,7 @@
 				E4AC19D0198812E20087DB98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4AC19D1198812E20087DB98 /* Build configuration list for PBXNativeTarget "projetoGitTests" */ = {
 			isa = XCConfigurationList;
@@ -764,6 +783,7 @@
 				E4AC19D3198812E20087DB98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -66,13 +66,13 @@
                             <constraint firstAttribute="trailing" secondItem="y9g-AS-Zax" secondAttribute="trailing" constant="20" id="UM0-rt-Wii"/>
                             <constraint firstItem="6u6-7v-q72" firstAttribute="bottom" secondItem="eZf-32-BNO" secondAttribute="bottom" id="i8F-SZ-Mw3"/>
                             <constraint firstItem="6u6-7v-q72" firstAttribute="top" secondItem="eZf-32-BNO" secondAttribute="top" id="jHm-2m-U6Q"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6u6-7v-q72" secondAttribute="bottom" constant="20" id="qvK-yz-55J"/>
                             <constraint firstItem="y9g-AS-Zax" firstAttribute="top" secondItem="14W-40-768" secondAttribute="bottom" constant="8" id="y0c-r0-cIl"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="viewCinza" destination="eZf-32-BNO" id="BLk-vM-koM"/>
-                        <outlet property="viewVermelha" destination="kh9-bI-dsS" id="AZM-Zo-nMl"/>
+                        <outlet property="viewAzul" destination="y9g-AS-Zax" id="qrr-f9-giP"/>
+                        <outlet property="viewCinza" destination="eZf-32-BNO" id="sym-sJ-ejx"/>
+                        <outlet property="viewVermelha" destination="6u6-7v-q72" id="FN6-bm-Y0C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
