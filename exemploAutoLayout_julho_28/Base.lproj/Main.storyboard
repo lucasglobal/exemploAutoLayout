@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6u6-7v-q72">
+                                <rect key="frame" x="20" y="428" width="130" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.04324238641" blue="0.030531696479999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-32-BNO">
+                                <rect key="frame" x="170" y="428" width="130" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80699962990755247" green="0.80994705879050855" blue="0.81687330163043481" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="2f5-SX-9QN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IH0-xb-T1z">
+                                <rect key="frame" x="74" y="20" width="226" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.92869116429999998" blue="0.096402120440000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9g-AS-Zax">
+                                <rect key="frame" x="20" y="61" width="280" height="359"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14W-40-768">
+                                <rect key="frame" x="20" y="20" width="46" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="Alterar">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="botaoAlterar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1XH-bq-CoP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6u6-7v-q72" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="4yE-P0-6QC"/>
+                            <constraint firstItem="IH0-xb-T1z" firstAttribute="leading" secondItem="14W-40-768" secondAttribute="trailing" constant="8" id="5Q5-96-Aqi"/>
+                            <constraint firstItem="y9g-AS-Zax" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="6aF-T5-Ib6"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="eZf-32-BNO" secondAttribute="bottom" constant="20" id="9k7-hb-aAf"/>
+                            <constraint firstItem="6u6-7v-q72" firstAttribute="width" secondItem="eZf-32-BNO" secondAttribute="width" id="GAO-sp-xgc"/>
+                            <constraint firstItem="eZf-32-BNO" firstAttribute="leading" secondItem="6u6-7v-q72" secondAttribute="trailing" constant="20" id="OIU-iA-qxz"/>
+                            <constraint firstAttribute="trailing" secondItem="IH0-xb-T1z" secondAttribute="trailing" constant="20" id="Ody-WZ-QsB"/>
+                            <constraint firstItem="6u6-7v-q72" firstAttribute="top" secondItem="y9g-AS-Zax" secondAttribute="bottom" constant="8" id="Px3-zi-Gc6"/>
+                            <constraint firstAttribute="trailing" secondItem="eZf-32-BNO" secondAttribute="trailing" constant="20" symbolic="YES" id="QI6-i8-hvn"/>
+                            <constraint firstAttribute="trailing" secondItem="y9g-AS-Zax" secondAttribute="trailing" constant="20" id="UM0-rt-Wii"/>
+                            <constraint firstItem="6u6-7v-q72" firstAttribute="bottom" secondItem="eZf-32-BNO" secondAttribute="bottom" id="i8F-SZ-Mw3"/>
+                            <constraint firstItem="6u6-7v-q72" firstAttribute="top" secondItem="eZf-32-BNO" secondAttribute="top" id="jHm-2m-U6Q"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6u6-7v-q72" secondAttribute="bottom" constant="20" id="qvK-yz-55J"/>
+                            <constraint firstItem="y9g-AS-Zax" firstAttribute="top" secondItem="14W-40-768" secondAttribute="bottom" constant="8" id="y0c-r0-cIl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewCinza" destination="eZf-32-BNO" id="BLk-vM-koM"/>
+                        <outlet property="viewVermelha" destination="kh9-bI-dsS" id="AZM-Zo-nMl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
